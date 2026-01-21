@@ -3,12 +3,3 @@ pages_build_output_dir = "dist"
 
 [vars]
 ENVIRONMENT = "production"
-
-[[routes]]
-pattern = "aoju.ai/*"
-script = "worker.js"
-
-# 兼容 Workers 模式的配置（如果不想用 Pages）
-[site]
-bucket = "./dist"
-entry-point = "workers-site"
